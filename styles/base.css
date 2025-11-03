@@ -21,6 +21,8 @@ header {
 main {
     max-width: 1000px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 h1 {
@@ -64,11 +66,6 @@ header span {
 
 nav a:hover {
     text-decoration: underline;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
 }
 
 .card {
