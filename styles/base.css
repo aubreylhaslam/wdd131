@@ -74,6 +74,8 @@ nav a:hover {
 main h1 {
     text-align: center;
     margin-top: 1rem;
+    font-family: Lato, sans-serif;
+
 }
 
 .card {
