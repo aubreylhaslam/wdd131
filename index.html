@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 Home Page</title>
+    <meta name="description" content="Aubrey Haslam's WDD 131 - Dynamic Web Fundamentals W01 home page.">
+    <meta name="author" content="Aubrey Haslam">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:opsz@18..144&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
-    <h1>WDD 131 | Aubrey Haslam</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="www.linkedin.com/in/aubrey-haslam-300705312" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Aubrey Haslam</h1>
+       <div class="sections">
+            <div class="about card">
+                <h2>About Me</h2>
+                <img class="profile" src="images/profile-picture.jpg" alt="Aubrey Haslam">
+                <p class="bio">My name is Aubrey Haslam. I was born in Texas and I currently live in northern Utah with my husband Hunter and our dog named Suki. I'm employed as a graphic designer/artist for Monolithic Constructors Inc. I'm pursuing my bachelor's in professsional studies at BYU Pathway.</p>
+                <h3>Utah, USA</h3>
+                <figure>
+                    <img src="images/utah-flag.png" alt="The Utah state flag">
+                    <figcaption>Official Flag of Utah</figcaption>
+                </figure>
+                <p>Utah is a landlocked state in the western United States known for its diverse geography, which includes mountains, deserts, and national parks. The capital is Salt Lake City, and the state is famous for its outdoor recreation, particularly skiing and hiking in its five national parks.</p>
+            </div>
+            <div class="resources card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li><a href="#" title="Dev.to Community">Dev.to Community</a></li>
+                    <li><a href="#" title="Smashing Magazine">Smashing Magazine</a></li>
+                    <li><a href="#" title="CSS Tricks">CSS Tricks</a></li>
+                    <li><a href="#" title="W3 Schools">W3 Schools</a></li>
+                    <li><a href="#" title="Udemy">Udemy</a></li>
+                    <li><a href="#" title="Image Placeholder">Image Placeholder</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Aubrey Haslam | Utah, USA</p>
+        <p>Last Modification: <span id=lastModified></span></p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,166 @@
+:root {
+    --heading-font: Lato, Verdana, sans-serif;
+    --body-font: Merriweather, Arial, sans-serif;
+    --main-color: rgb(224, 209, 200);
+    --text-color: rgb(77, 44, 24);
+    --border-color: rgb(0 0 0 / 20%);
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: var(--body-font);
+    color: var(--text-color);
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+#course-title, h1, h2, h3 {
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--text-color)
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(224, 209, 200);
+    color: var(--text-color);
+    font-family: var(--heading-font);  
+    font-size: xx-large;  
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+    padding: 1rem;
+    background: var(--text-color);
+}
+
+.navigation a {
+    display: block;
+    text-align: center;
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid var(--main-color); 
+    max-height: 500px;
+    border-radius: 1.1rem;
+    margin: 1rem;
+}
+
+.about {
+    max-width: 600px;
+}
+
+.about h2 {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 0.5rem;
+}
+.profile {
+    height: 180px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    float: right;
+}
+
+.about p {
+    padding: 1rem;
+    line-height: 1.5rem;
+}
+
+.bio {
+    margin-top: 1.2rem;
+}
+
+.about h3 {
+    text-align: center;
+    padding: 0.5rem;
+    border-bottom: 2px solid var(--main-color);
+    clear: both;
+}
+
+figure {
+    width: 200px;
+    height: auto;
+    margin: 1.7rem;
+    text-align: center;
+    float: left;
+}
+
+figure img {
+    width: 200px;
+}
+
+figcaption {
+    padding-top: 1rem;
+    font-style: italic;
+}
+
+.resources {
+    line-height: 1.5rem;
+}
+
+.resources h2 {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 0.65rem;
+    min-width: 300px;
+}
+
+.resources ul {
+    padding: 1rem;
+    padding-left: 2rem;
+    
+}
+
+.resources a {
+    text-decoration: none;
+}
+
+.resources a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: auto;
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
