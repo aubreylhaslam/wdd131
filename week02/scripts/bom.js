@@ -1,20 +1,29 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
 
 button.addEventListener('click', function () {
-    if (input.value.trim() !== '') {
-        li.textContent = input.value;
-        deleteButton.textContent = '❌';
-        li.append(deleteButton);
-        list.append(li);
-    }
-});
+    const chapter = input.value.trim();
 
-deleteButton.addEventListener('click', function () {
-    list.removeChild(li);
-    input.focus();
+    if (chapter === '') { return; }
+
+    // Create elements INSIDE the handler
+    const li = document.createElement('li');
+    const deleteButton = document.createElement('button');
+
+    li.textContent = chapter;
+    deleteButton.textContent = '❌';
+
+    // Add delete behavior for this specific item
+    deleteButton.addEventListener('click', function () {
+        list.removeChild(li);
+        input.focus();
+    });
+
+    li.append(deleteButton);
+    list.append(li);
+
+    // Clear input
     input.value = '';
+    input.focus();
 });
