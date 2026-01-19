@@ -45,6 +45,10 @@ header, main, footer {
     content: "X";
 }
 
+nav {
+    display: flex;
+}
+
 .navigation {
     display: flex;
     flex-direction: column;

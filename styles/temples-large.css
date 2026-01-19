@@ -5,23 +5,28 @@
     }
 
     header {
-        max-width: 1000px;
+        max-width: 900px;
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 370px 40px 1fr;
         background-color: rgb(70, 98, 143);
     }
 
     .topnav {
         place-content: center;
+        justify-content: flex-end;
+    }
+
+    nav {
+        display: flex;
+        grid-column: 3/4;
     }
     
     .navigation {
-        max-width: 600px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         list-style: none;
-        justify-content: flex-end;
+        justify-content: space-around;
         padding: 1rem;
     }
 
@@ -37,7 +42,7 @@
     }
 
     main {
-        max-width: 840px;
+        max-width: 800px;
         display: grid;
         grid-template: 50px 1fr 1fr 1fr / 1fr 1fr 1fr;
         grid-gap: 1rem;
@@ -52,6 +57,6 @@
     }
 
     footer {
-        max-width: 1000px;
+        max-width: 900px;
      }
 }
