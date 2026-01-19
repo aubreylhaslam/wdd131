@@ -13,7 +13,6 @@
 }
 
 body {
-    
     font-family: var(--body-font);
     color: var(--text-color);
 }
@@ -171,5 +170,4 @@ footer {
     text-align: center;
     background-color: var(--main-color);
     color: var(--text-color);
-
 }

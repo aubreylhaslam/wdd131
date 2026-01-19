@@ -1,0 +1,57 @@
+@media (min-width: 601px) {
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-color: rgb(70, 98, 143);
+    }
+
+    .topnav {
+        place-content: center;
+    }
+    
+    .navigation {
+        max-width: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
+
+    .navigation a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        max-width: 840px;
+        display: grid;
+        grid-template: 50px 1fr 1fr 1fr / 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    h1 {
+        grid-column: 1/4;
+    }
+
+    figure img {
+        max-width: 200px;
+    }
+
+    footer {
+        max-width: 1000px;
+     }
+}
