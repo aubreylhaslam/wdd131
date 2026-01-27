@@ -1,0 +1,39 @@
+@media (min-width: 1000px) { 
+
+    body {
+        width: 1200px;
+        height: auto;
+    }
+
+    main {
+        position: relative; 
+    }
+
+    .hero {
+        width: 1200px;
+        height: 694px;
+    }
+
+    .hero img {
+        width: 1200px;
+        height: auto;
+    }
+
+    .data {
+        position: absolute;
+        top: 5rem;
+        left: 5rem;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        width: 350px;
+    }
+
+    .weather {
+        position: absolute;
+        top: 15rem;
+        right: 5rem;
+        background-color: white;
+        width: 350px
+    }
+
+}

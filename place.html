@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Country Page</title>
+    <meta name="description" content="The subject of the page is a country or place where I live, have visited, or wish to visit.">
+    <meta name="author" content="Aubrey Haslam">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Moab, Utah</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/moab-large.webp" media="(min-width: 1000px)">
+                <img src="images/moab-medium.webp" alt="Moab, Utah" width="500px" height="750px">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <div class="label">
+                <p>Area:<br>
+                Population:<br>
+                Main Language:<br>
+                Currency:<br>
+                Time Zone:<br>
+                Area Code:<br>
+                Internet TLD:</p>
+            </div>
+            <div class="info">
+                <p>4.80 sq mi<br>
+                5,242<br>
+                English<br>
+                US Dollar<br>
+                MST (UTC-7)<br>
+                435<br>
+                .us</p>
+            </div>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/weather.svg" alt="weather icon">
+            <div class="label">
+                <p>Temperature:<br>
+                Conditions:<br>
+                Wind:<br>
+                Wind Chill:</p>
+            </div>
+            <div class="info">
+                <p><span id="temp">37</span>°F</p>
+                <p>Partly Cloudy</p>
+                <p><span id="mph">5</span>mph</p>
+                <p><span id="windChill"></span>°F</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Aubrey Haslam | Utah, USA</p>
+        <p>Last Modification: <span id=lastModified></span></p>
+    </footer>    
+</body>
+</html>
