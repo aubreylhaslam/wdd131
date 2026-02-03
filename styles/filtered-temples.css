@@ -55,6 +55,7 @@ nav {
     flex-direction: column;
     list-style: none;
     background-color: rgb(70, 98, 143);
+    width: 100vw;
 }
 
 .navigation a {
