@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>W05 Assignment: Product Review Form</title>
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals | W05 Assignment: Product Review Form">
+    <meta name="author" content="Aubrey Haslam">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/form.js"></script>
 </head>
 <body>
+    <main>
+        <h1>Product Review</h1>
+        <p class="thank-you">Thank you for for reviewing our products!</p>
+    </main>
+
+    <script>
+        let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
+
+        numVisits++;
+
+        localStorage.setItem("numVisits", numVisits);
+    </script>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Aubrey Haslam | Utah, USA</p>
+        <p>Last Modification: <span id=lastModified></span></p>
+    </footer>
     
 </body>
 </html>

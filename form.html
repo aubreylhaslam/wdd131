@@ -21,15 +21,15 @@
                 <legend>Product Review Form</legend>
 
                 <section class="select-products">
-                    <label>Product Name
-                        <select name="products" id="products" required>
+                    <label>Product Name *
+                        <select name="choose-product" id="chooseProduct" required>
                             <option value="">Choose Product</option>
                         </select>
                     </label>
                 </section>
         
                 <section class="radio-rating">
-                    <p>Overall Rating</p>
+                    <p>Overall Rating *</p>
                     <label>&star;<input type="radio" name="rating" id="one" value="1"></label>
                     <label>&star; &star;<input type="radio" name="rating" id="two" value="2"></label>
                     <label>&star; &star; &star;<input type="radio" name="rating" id="three" value="3"></label>
@@ -38,19 +38,19 @@
                 </section>
 
                 <section class="date-install">
-                    <label>Date of Installation<input type="date" id="install" name="install" required></label>
+                    <label>Date of Installation *<input type="date" id="install" name="install" required></label>
                 </section>
 
                 <section class="check-features">
                     <p>Which features did you find useful in the product?<br>(Check all that apply)</p>
-                    <label><input type="checkbox" id="durability" name="durability" value="yes" required>Durability</label>
-                    <label><input type="checkbox" id="ease" name="ease" value="yes" required>Ease of Use</label>
-                    <label><input type="checkbox" id="performance" name="performance" value="yes" required>Performance</label>
-                    <label><input type="checkbox" id="design" name="design" value="yes" required>Design</label>
+                    <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                    <label><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
                 </section>
 
                 <section class="textarea-review">
-                    <label>Written Review<input type="textarea" id="review" name="review"></label>
+                    <label>Written Review<textarea id="review" name="review"></textarea></label>
                 </section>
 
                 <section class="text-name">
