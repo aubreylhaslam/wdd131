@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 600px;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    font-family: roboto;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(54, 44, 100);
+    color: white;
+}
+
+legend {
+    display: none;
+}
+
+input, select, label{
+    display: block;
+    line-height: 2.5rem;
+}
+
+.review-form fieldset {
+    padding: 1rem;
+    border: none;
+    background-color: rgb(224, 220, 237);
+}
+
+section { 
+    padding: 1rem;
+}
+
+/*----------- PRODUCT NAME --------------*/
+
+.select-products select {
+    width: 100%;
+    padding: 11.25px;
+    font-size: 1.1rem;
+}
+
+/*----------- OVERALL RATING --------------*/
+
+.radio-rating {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px 70px;
+}
+
+.radio-rating p {
+    grid-column: 1/6;
+}
+
+.radio-rating label {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.radio-rating input {
+    margin: 0 auto;
+    transform: scale(1.8);
+}
+
+/*----------- DATE OF INSTALLATION --------------*/
+
+.date-install input {
+    width: 100%;
+    padding: 0 1rem 0 1rem;
+    font-size: 1.1rem;
+}
+
+/*----------- USEFUL FEATURES --------------*/
+
+.check-features {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-features input, .check-features label {
+    display: inline;
+}
+
+.check-features input {
+    transform: scale(1.8);
+    margin-right: 1rem;
+}
+
+/*----------- WRITTEN REVIEW --------------*/
+
+.textarea-review input {
+    width: 100%;
+    height: 138px;
+}
+
+/*----------- YOUR NAME --------------*/
+
+.text-name input {
+    width: 100%;
+}
+
+/*----------- SUBMIT REVIEW --------------*/
+
+.submit-button input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    background-color: rgb(54, 44, 100);
+    color: white;
+}
+
+footer {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(54, 44, 100);
+    color: white;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W05 Assignment: Product Review Form</title>
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals | W05 Assignment: Product Review Form">
+    <meta name="author" content="Aubrey Haslam">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html" class="review-form">
+            <fieldset>
+                <legend>Product Review Form</legend>
+
+                <section class="select-products">
+                    <label>Product Name
+                        <select name="products" id="products" required>
+                            <option value="">Choose Product</option>
+                        </select>
+                    </label>
+                </section>
+        
+                <section class="radio-rating">
+                    <p>Overall Rating</p>
+                    <label>&star;<input type="radio" name="rating" id="one" value="1"></label>
+                    <label>&star; &star;<input type="radio" name="rating" id="two" value="2"></label>
+                    <label>&star; &star; &star;<input type="radio" name="rating" id="three" value="3"></label>
+                    <label>&star; &star; &star; &star;<input type="radio" name="rating" id="four" value="4"></label>
+                    <label>&star; &star; &star; &star; &star;<input type="radio" name="rating" id="five" value="5"></label>
+                </section>
+
+                <section class="date-install">
+                    <label>Date of Installation<input type="date" id="install" name="install" required></label>
+                </section>
+
+                <section class="check-features">
+                    <p>Which features did you find useful in the product?<br>(Check all that apply)</p>
+                    <label><input type="checkbox" id="durability" name="durability" value="yes" required>Durability</label>
+                    <label><input type="checkbox" id="ease" name="ease" value="yes" required>Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance" value="yes" required>Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="yes" required>Design</label>
+                </section>
+
+                <section class="textarea-review">
+                    <label>Written Review<input type="textarea" id="review" name="review"></label>
+                </section>
+
+                <section class="text-name">
+                    <label>Your Name<input type="text" name="fname" required></label>
+                </section>
+
+                <section class="submit-button">
+                    <input type="submit" value="Post Review">
+                </section>
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Aubrey Haslam | Utah, USA</p>
+        <p>Last Modification: <span id=lastModified></span></p>
+    </footer>
+</body>
+</html>
