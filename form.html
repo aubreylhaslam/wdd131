@@ -23,40 +23,42 @@
                 <legend>Product Review Form</legend>
 
                 <section class="select-products">
-                    <label for="chooseProduct">Product Name *</label>
+                    <label for="chooseProduct">Product Name *
                         <select name="chooseProduct" id="chooseProduct" required>
                             <option value="" disabled selected>Select a Product</option>
                         </select>
+                    </label>
                 </section>
         
                 <section class="radio-rating">
                     <p>Overall Rating *</p>
-                    <label for="one">&star;</label><input type="radio" name="rating" id="one" value="1">
-                    <label>&star; &star;<input type="radio" name="rating" id="two" value="2"></label>
-                    <label>&star; &star; &star;<input type="radio" name="rating" id="three" value="3"></label>
-                    <label>&star; &star; &star; &star;<input type="radio" name="rating" id="four" value="4"></label>
-                    <label>&star; &star; &star; &star; &star;<input type="radio" name="rating" id="five" value="5"></label>
+                    <label for="one">&star;<input type="radio" name="rating" id="one" value="1" required></label>
+                    <label for="two">&star; &star;<input type="radio" name="rating" id="two" value="2"></label>
+                    <label for="three">&star; &star; &star;<input type="radio" name="rating" id="three" value="3"></label>
+                    <label for="four">&star; &star; &star; &star;<input type="radio" name="rating" id="four" value="4"></label>
+                    <label for="five">&star; &star; &star; &star; &star;<input type="radio" name="rating" id="five" value="5"></label>
                 </section>
 
                 <section class="date-install">
-                    <label>Date of Installation *<input type="date" id="install" name="install" required></label>
+                    <label for="install">Date of Installation *<input type="date" id="install" name="install" required></label>
                 </section>
 
                 <section class="check-features">
                     <p>Which features did you find useful in the product?<br>(Check all that apply)</p>
-                    <label><input type="checkbox" id="durability" name="durability" value="yes" required>Durability</label>
-                    <label><input type="checkbox" id="ease" name="ease" value="yes" required>Ease of Use</label>
-                    <label><input type="checkbox" id="performance" name="performance" value="yes" required>Performance</label>
-                    <label><input type="checkbox" id="design" name="design" value="yes" required>Design</label>
+                    <label for="durability"><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                    <label for="ease"><input type="checkbox" id="ease" name="ease" value="yes">Ease of Use</label>
+                    <label for="performance"><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                    <label for="design"><input type="checkbox" id="design" name="design" value="yes">Design</label>
                 </section>
 
                 <section class="textarea-review">
-                    <label for="review"> Written Review</label>
+                    <label for="review"> Written Review
                     <textarea id="review" name="review"></textarea>
+                    </label>
                 </section>
 
                 <section class="text-name">
-                    <label>Your Name<input type="text" name="fname" required></label>
+                    <label for="fname">Your Name<input type="text" id="fname" name="fname" required></label>
                 </section>
 
                 <section class="submit-button">
