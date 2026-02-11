@@ -1,0 +1,54 @@
+@media (min-width: 700px) {
+    body {
+        width: 95vw;
+        margin-top: 3rem;
+        
+    }
+
+    fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 1fr;
+    }
+    
+    .select-products, .radio-rating, .date-install {
+        grid-column: 1/2;
+    }
+
+    .check-features, .textarea-review, .text-name {
+        grid-column: 2/3;
+    }
+
+    .select-products, .check-features {
+        grid-row: 1/2;
+    }
+
+    .radio-rating, .textarea-review {
+        grid-row: 2/3;
+    }
+
+    .date-install, .text-name {
+        grid-row: 3/4;
+    }
+
+    .submit-button {
+        grid-column: 1/3;
+    }
+
+    .check-features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .check-features p {
+        grid-column: 1/3;
+    }
+
+    
+
+    footer {
+        grid-column: 1/3;
+    }
+        
+
+}
