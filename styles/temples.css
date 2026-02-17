@@ -46,7 +46,7 @@ header, main, footer {
 }
 
 nav {
-    display: flex;
+    display: flex; 
 }
 
 .navigation {

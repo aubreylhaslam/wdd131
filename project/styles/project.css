@@ -1,0 +1,228 @@
+:root {
+    --dark-brown: #53270e;
+    --brown: #BF8566;
+    --brown-grey: #ddbea9;
+    --cream: #ffe8d6;
+    --namefont: Alex Brush;
+    --bodyfont: Roboto;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: var(--bodyfont);
+}
+
+/*----------- header --------------*/
+
+header {
+    width: 100vw;
+    background-color: var(--brown);
+}
+
+.topnav {
+    display: block;
+    position: relative;
+    padding: 1rem;
+}
+
+#title {
+    font-size: 2.5rem;
+    color: white;
+    font-family: var(--namefont); 
+    text-align: center;
+}
+
+#menu {
+    font-size: 1.8rem;
+    background: none;
+    border: 0;
+    color: white;
+    position: absolute;
+    top: 1.3rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem; 
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.open a {
+    display: block;
+}
+
+/*----------- opener --------------*/
+
+.hero img {
+    width: 100vw;
+}
+
+/*----------- description --------------*/
+
+.description {
+    padding: 2rem; 
+}
+
+.description h1 {
+    text-align: center;
+    font-family: var(--namefont);
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: var(--dark-brown);
+}
+
+.description p {
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--dark-brown);
+}
+/*----------- services --------------*/
+
+.services {
+    background-color: var(--brown);
+    color: var(--cream);
+    padding: 1rem;
+}
+
+.services h2 {
+    text-align: center;
+    font-family: var(--namefont);
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+figure {
+    padding: 1rem;
+}
+
+figure img {
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid var(--cream);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+figcaption span {
+    font-size: 2.3rem;
+    line-height: 3rem;
+    font-family: var(--namefont);
+}
+
+figcaption {
+    width: 85vw;
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    border-bottom: 5px solid var(--cream);
+    border-left: 5px solid var(--cream);
+    border-right: 5px solid var(--cream);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+figure button {
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    background-color: var(--cream);
+    color: var(--brown);
+    border: 5px solid var(--cream);
+    border-radius: 6px;
+}
+
+figure button:hover {
+    background-color: var(--brown);
+    border: 5px solid var(--cream);
+    color: var(--cream);
+}
+
+/*----------- book now --------------*/
+
+.book-now {
+    position: relative;
+}
+
+.book-now img {
+    width: 100vw;
+}
+
+.book-now p {
+    position: absolute;
+    width: 80vw;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+    filter: drop-shadow(0px 0px 5px rgb(54, 54, 54)); 
+}
+
+.book-now button {
+    position: absolute;
+    top: 53%;
+    left: 35%;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+    background-color: white;
+    color: var(--dark-brown);
+    border: 5px solid white;
+    border-radius: 6px;
+    filter: drop-shadow(0px 0px 5px rgb(137, 137, 137));
+}
+
+.book-now button:hover {
+    background: none;
+    color: white;
+}
+
+/*----------- footer --------------*/
+
+footer {
+    background-color: var(--brown);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
