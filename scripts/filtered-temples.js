@@ -158,4 +158,4 @@ function createTempleCard(filteredTemples) {
 
         document.querySelector(".res-grid").appendChild(card);
     });
-    }
+}

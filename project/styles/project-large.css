@@ -87,4 +87,18 @@
         background-color: var(--plum);
         color: white;
         }
+
+/*----------- book now --------------*/
+
+    .invite-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .invite-cards section {
+        width: 300px;
+    }
 }
