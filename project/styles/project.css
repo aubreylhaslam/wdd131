@@ -1,8 +1,10 @@
 :root {
-    --dark-brown: #53270e;
-    --brown: #BF8566;
+    --dark-brown: #624642;
+    --plum: #7a545d;
+    --green: #345848;
+    --gray: #e5d2d0;
     --brown-grey: #ddbea9;
-    --cream: #ffe8d6;
+    --cream: #ffffff;
     --namefont: Alex Brush;
     --bodyfont: Roboto;
 }
@@ -14,19 +16,21 @@
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     font-family: var(--bodyfont);
 }
 
 /*----------- header --------------*/
 
 header {
-    width: 100vw;
-    background-color: var(--brown);
+    width: 100%;
+    background-color: var(--plum);
 }
 
 .topnav {
     display: block;
+    align-content: center;
+    justify-content: center;
     position: relative;
     padding: 1rem;
 }
@@ -87,35 +91,31 @@ nav {
 /*----------- opener --------------*/
 
 .hero img {
-    width: 100vw;
+    width: 100%;
 }
 
 /*----------- description --------------*/
 
 .description {
-    padding: 2rem; 
+    padding: 4rem; 
 }
 
 .description h1 {
     text-align: center;
     font-family: var(--namefont);
     font-size: 3rem;
-    padding-bottom: 1rem;
-    color: var(--dark-brown);
-}
-
-.description p {
-    text-align: center;
-    line-height: 1.5rem;
-    font-size: 1.2rem;
-    color: var(--dark-brown);
+    color: var(--plum);
 }
 /*----------- services --------------*/
 
 .services {
-    background-color: var(--brown);
-    color: var(--cream);
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--plum);
+    color: white;
+    padding: 1rem;  
 }
 
 .services h2 {
@@ -133,7 +133,7 @@ figure img {
     width: 85vw;
     display: flex;
     flex-direction: column;
-    border: 5px solid var(--cream);
+    border: 5px solid white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
@@ -150,9 +150,9 @@ figcaption {
     padding: 1rem;
     line-height: 1.5rem;
     font-size: 1.2rem;
-    border-bottom: 5px solid var(--cream);
-    border-left: 5px solid var(--cream);
-    border-right: 5px solid var(--cream);
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -161,26 +161,32 @@ figure button {
     padding: 1rem;
     margin: 1rem;
     font-size: 1rem;
-    background-color: var(--cream);
-    color: var(--brown);
-    border: 5px solid var(--cream);
+    background-color: white;
+    color: var(--plum);
+    border: 5px solid white;
     border-radius: 6px;
 }
 
 figure button:hover {
-    background-color: var(--brown);
-    border: 5px solid var(--cream);
-    color: var(--cream);
+    background-color: var(--plum);
+    border: 5px solid white;
+    color: white;
 }
 
 /*----------- book now --------------*/
 
 .book-now {
     position: relative;
+    height: auto;
 }
 
 .book-now img {
-    width: 100vw;
+    width: 100%;
+}
+.book-now span {
+    font-family: var(--namefont);
+    font-size: 2.5rem;
+    line-height: 3rem;
 }
 
 .book-now p {
@@ -199,14 +205,15 @@ figure button:hover {
 
 .book-now button {
     position: absolute;
-    top: 53%;
-    left: 35%;
+    top: 65%;
+    left: 47%;
+    transform: translate(-50%, -50%);
     border-radius: 6px;
     padding: 1rem;
     margin: 1rem;
     font-size: 1rem;
     background-color: white;
-    color: var(--dark-brown);
+    color: var(-plum);
     border: 5px solid white;
     border-radius: 6px;
     filter: drop-shadow(0px 0px 5px rgb(137, 137, 137));
@@ -220,7 +227,7 @@ figure button:hover {
 /*----------- footer --------------*/
 
 footer {
-    background-color: var(--brown);
+    background-color: var(--plum);
     color: white;
     padding: 2rem;
     text-align: center;
