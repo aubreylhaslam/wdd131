@@ -1,3 +1,8 @@
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 :root {
     --dark-brown: #624642;
     --plum: #7a545d;
@@ -157,7 +162,7 @@ figcaption {
     border-bottom-right-radius: 15px;
 }
 
-figure button {
+.services figure button {
     padding: 1rem;
     margin: 1rem;
     font-size: 1rem;
@@ -167,7 +172,7 @@ figure button {
     border-radius: 6px;
 }
 
-figure button:hover {
+.services figure button:hover {
     background-color: var(--plum);
     border: 5px solid white;
     color: white;
@@ -234,6 +239,10 @@ footer {
     font-size: 1.2rem;
 }
 
+footer a {
+    color: white;
+}
+
 /*----------- SHOP --------------*/
 
 .hero-shop {
@@ -274,15 +283,15 @@ footer {
     margin: 1rem;
 }
 
-label {
+.color label, .style label, .price label {
     font-size: 1.3rem;
     color: var(--plum);
 }
 
-select {
+.color select, .style select, .price select {
     padding: 0.5rem;
     font-size: 1rem;
-    width: 130px;
+    width: 100px;
     color: var(--plum)
 }
 
@@ -314,3 +323,60 @@ select {
 .invite-cards p {
     padding: 0 1.5rem 1.5rem 1.5rem;
 }
+
+/*----------- INQUIRY --------------*/
+
+.description h2, .description h3 {
+    color: var(--plum);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.inquiry-form {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+legend {
+    display: none;
+}
+
+.inquiry-form input, .inquiry-form select, .inquiry-form label, .inquiry-form textarea, .inquiry-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.inquiry-form input[type="submit"] {
+    margin: 1rem 0 1rem 0;
+}
+
+/*----------- SENT FORM --------------*/
+
+.sent-form {
+    margin: 2rem;
+    color: var(--plum);
+}
+
+.sent-form h1 {
+    text-align: center;
+    font-family: var(--namefont);
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+.sent-form p {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1.3rem;
+}
+
+

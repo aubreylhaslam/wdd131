@@ -31,25 +31,18 @@
         </nav>
     </header>
     <main>
-        <div class="references">
-            <h1>References</h1>
-            <h2>Images</h2>
-            <h3>Unsplash Free Images:</h3>
-            <p>custom-design.webp<br>
-            full-package.webp<br>
-            hero-large.webp<br>
-            hero-small.webp<br>
-            premade-design.webp<br>
-            book-now.webp</p>
-            <h3>Canva Free Designs</h3>
-            <p>invite-1.webp through invite-20.webp</p>
-            <h2>Inspiration</h2>
-            <p>Writeprettyforme.com<br>
-            Lamadeleinestudio.com</p>
-            <h2>AI Use</h2>
-            <p>AI was used to check code for mistakes and improve javascript code. I did not just copy and paste the suggested code. I took the time to learn what the AI was suggesting and why it works.</p>
+        <div class="sent-form">
+            <h1>Form Sent!</h1>
+            <p>Thank you reaching out! I'll get back to you in 24-48 hours.</p>
         </div>
     </main>
+    <script>
+        let numVisits = Number(window.localStorage.getItem("numVisits")) || 0;
+
+        numVisits++;
+
+        localStorage.setItem("numVisits", numVisits);
+    </script>
     <footer>
         <p>Copyright © 2026 Evermore Studio | <a href="references.html" title="references">References</a></p>
     </footer>

@@ -101,4 +101,14 @@
     .invite-cards section {
         width: 300px;
     }
+
+    select {
+        width: 150px;
+    }
 }
+
+/*----------- INQUIRY --------------*/
+
+.inquiry-form {
+    max-width: 800px;
+}   

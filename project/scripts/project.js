@@ -151,7 +151,7 @@ const invitations = [
 createInviteCard(invitations);
 
 function createInviteCard(filteredInvite) {
-    document.querySelector(".invite-cards").innerHTML = "";
+    document.querySelector(".invite-cards").innerHTML = " ";
     filteredInvite.forEach(invitations => {
         let inviteImage = document.createElement("img");
         let card = document.createElement("section");
