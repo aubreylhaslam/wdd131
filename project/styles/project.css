@@ -162,17 +162,20 @@ figcaption {
     border-bottom-right-radius: 15px;
 }
 
-.services figure button {
+.services figure a {
     padding: 1rem;
-    margin: 1rem;
+    margin: 2rem;
     font-size: 1rem;
+    line-height: 6rem;
     background-color: white;
     color: var(--plum);
     border: 5px solid white;
     border-radius: 6px;
+    text-decoration: none;
+    
 }
 
-.services figure button:hover {
+.services figure a:hover {
     background-color: var(--plum);
     border: 5px solid white;
     color: white;
@@ -208,7 +211,7 @@ figcaption {
     filter: drop-shadow(0px 0px 5px rgb(54, 54, 54)); 
 }
 
-.book-now button {
+.book-now a {
     position: absolute;
     top: 65%;
     left: 47%;
@@ -218,13 +221,14 @@ figcaption {
     margin: 1rem;
     font-size: 1rem;
     background-color: white;
-    color: var(-plum);
+    color: var(--plum);
     border: 5px solid white;
     border-radius: 6px;
+    text-decoration: none;
     filter: drop-shadow(0px 0px 5px rgb(137, 137, 137));
 }
 
-.book-now button:hover {
+.book-now a:hover {
     background: none;
     color: white;
 }
@@ -245,7 +249,7 @@ footer a {
 
 /*----------- SHOP --------------*/
 
-.hero-shop {
+.opener-shop {
     position: relative;
 }
 
@@ -254,7 +258,7 @@ footer a {
     display: block;
 }
 
-.hero-shop h1 {
+.opener-shop h1 {
     width: 100%;
     padding: 1rem;
     text-align: center;
@@ -344,9 +348,7 @@ fieldset {
     padding: 1.5rem;
 }
 
-legend {
-    display: none;
-}
+
 
 .inquiry-form input, .inquiry-form select, .inquiry-form label, .inquiry-form textarea, .inquiry-form input[type="submit"] {
     display: block;

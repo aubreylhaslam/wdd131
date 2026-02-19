@@ -7,7 +7,11 @@
 
     header {
         display: grid;
-        grid-template-columns: 400px 2fr;
+        grid-template-columns: auto 2fr;
+    }
+
+    #title {
+        padding-left: 2rem;
     }
 
     nav {
@@ -37,6 +41,7 @@
 
     .services img, .services figcaption {
         width: 30vw;
+        min-width: 250px;
     }
 
     .services h2 {
@@ -73,9 +78,10 @@
         transform: none;
     }
 
-    .right button {
+    .right a {
         width: 130px;
         height: 70px;
+        align-content: center;
         margin: 0 auto;
         position: static;
         transform: none;
@@ -83,7 +89,7 @@
         border: 5px solid var(--plum);
     }
 
-    .book-now button:hover {
+    .book-now a:hover {
         background-color: var(--plum);
         color: white;
         }
@@ -102,7 +108,7 @@
         width: 300px;
     }
 
-    select {
+    .filter-invites select {
         width: 150px;
     }
 }
